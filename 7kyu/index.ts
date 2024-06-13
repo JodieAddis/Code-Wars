@@ -15,3 +15,16 @@ export function descendingOrder(n: number): number {
 export function descendingOrderTwo(n: number): number {
   return parseInt((n + "").split("").sort().reverse().join(""));
 }
+
+//2. Square every digit of a number and concatenate them.
+export class Kata {
+  static squareDigits(num: number): number {
+    return Number(
+      num
+        .toString()
+        .split("")
+        .map((digit) => Math.pow(parseInt(digit), 2))
+        .join("")
+    );
+  }
+}

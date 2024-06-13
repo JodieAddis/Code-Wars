@@ -130,3 +130,43 @@ export const reverseSeq = (n: number): number[] => {
   }
   return array;
 };
+
+// 11. Write a program that finds the summation of every number from 1 to num
+export const summation = (num: number) => {
+  let result: number = 0;
+  if (num > 0) {
+    for (let i = 1; i <= num; i++) {
+      result += i;
+    }
+  }
+  return result;
+};
+//other solution
+export const summationTwo = (num: number) => (num * (num + 1)) / 2;
+
+//12. Multiplying a given number by eight if it is an even number and by nine otherwise.
+export function simpleMultiplication(num: number): number {
+  let result = 0;
+  if (num % 2 === 0) {
+    result += num * 8;
+  } else {
+    result += num * 9;
+  }
+  return result;
+}
+//other solution:
+export const simpleMultiplicationTwo = (num: number): number =>
+  num * (num % 2 === 0 ? 8 : 9);
+
+// 13. Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers
+export function evenOrOdd(n: number): string {
+  if (n % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
+//optimisation du code précédent
+export function evenOrOddTwo(n: number): string {
+  return n % 2 === 0 ? "Even" : "Odd";
+}
