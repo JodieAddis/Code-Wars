@@ -20,3 +20,5 @@
 
 1. Make a function that can take any non-negative integer as an argument and return it with its digits in descending order
 2. Square every digit of a number and concatenate them
+3. Check that the color code respects the range a-m + return the error ratio
+4. Simple, given a string of words, return the length of the shortest word(s)
