@@ -170,3 +170,8 @@ export function evenOrOdd(n: number): string {
 export function evenOrOddTwo(n: number): string {
   return n % 2 === 0 ? "Even" : "Odd";
 }
+
+// 14. Create a function which translates a given DNA string into RNA, with Thymine is replaced by another nucleic acid Uracil ('U')
+export function DNAtoRNA(dna: string): string {
+  return dna.split("T").join("U");
+}

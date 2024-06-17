@@ -86,3 +86,16 @@ export function findShort(s: string): number {
 export function findShortTwo(s: string): number {
   return Math.min(...s.split(" ").map((w) => w.length));
 }
+
+// 5. Remove vowels
+export class KataTrolls {
+  static disemvowel(str: string): string {
+    return str.replace(/[aeiouAEIOU]/g, "");
+  }
+}
+
+// 6. Function which returns true if the first argument(string) passed in ends with the 2nd argument (also a string)
+export function solution(str: string, ending: string): boolean {
+  return str.endsWith(ending) ? true : false;
+  //using endsWith() method
+}
