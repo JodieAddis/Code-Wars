@@ -175,3 +175,27 @@ export function evenOrOddTwo(n: number): string {
 export function DNAtoRNA(dna: string): string {
   return dna.split("T").join("U");
 }
+
+// 15. Calculate the total number of blank pages needed for 'n' classmates and 'm' pages per document, returning 0 if either n or m is negative.
+export function paperwork(n: number, m: number): number {
+  return n > 0 && m > 0 ? n * m : 0;
+}
+
+// 16. Create a function that performs four basic mathematical operations (addition, subtraction, multiplication, division) based on three arguments: operation (string or character), value1 (number), and value2 (number), returning the result of applying the chosen operation to the numbers
+export function basicOp(
+  operation: string,
+  value1: number,
+  value2: number
+): number {
+  switch (operation) {
+    case "+":
+      return value1 + value2;
+    case "-":
+      return value1 - value2;
+    case "*":
+      return value1 * value2;
+    case "/":
+      return value1 / value2;
+  }
+  return 0;
+}

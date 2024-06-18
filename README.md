@@ -16,6 +16,8 @@
 12. Multiplying a given number by eight if it is an even number and by nine otherwise
 13. Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers
 14. Replace "T" with "U" → `split()` & `join()`
+15. Calculate the total number of blank pages needed for 'n' classmates and 'm' pages per document
+16. Create a function that performs four basic mathematical operations based on three arguments → `switch()`
 
 ## 7 Kyu
 
@@ -25,3 +27,6 @@
 4. Simple, given a string of words, return the length of the shortest word(s)
 5. Remove vowels → `replace()`
 6. Function which returns true if the first argumentpassed in ends with the 2nd argument → `endsWith()`
+7. Return the highest and lowest number from string input → `Math.min()` & `Math.max()`
+8. Reverse DNA sequence → `switch()`, `for loop` or `match()`
+9. Counting the number of vowels → `for loop`

@@ -99,3 +99,66 @@ export function solution(str: string, ending: string): boolean {
   return str.endsWith(ending) ? true : false;
   //using endsWith() method
 }
+
+// 7. Return the highest and lowest number from string input
+export class KataNumb {
+  static highAndLow(numbers: string): string {
+    const arrNumber = numbers.split(" ").map(Number);
+
+    const min = Math.min(...arrNumber);
+    const max = Math.max(...arrNumber);
+
+    return `${max} ${min}`;
+  }
+}
+
+// 8. Reverse DNA sequence
+export class KataDna {
+  static dnaStrand(dna: string): string {
+    let reverse = [];
+    for (let i = 0; i < dna.length; i++) {
+      switch (dna[i]) {
+        case "C":
+          reverse.push("G");
+          break;
+        case "G":
+          reverse.push("C");
+          break;
+        case "A":
+          reverse.push("T");
+          break;
+        case "T":
+          reverse.push("A");
+          break;
+      }
+    }
+    return reverse.join("");
+  }
+}
+//Autre solution avec la méthode match():
+export class KataDnaTwo {
+  static dnaStrand(dna: string): string {
+    const match = {
+      A: "T",
+      T: "A",
+      G: "C",
+      C: "G",
+    };
+    return Array.from(dna, (v) => match[v]).join("");
+  }
+}
+
+// 9. Counting the number of vowels
+export class KataVowels {
+  static getCount(str: string): number {
+    let count = 0;
+    let vowels = /^[aeiou]$/i;
+
+    for (let vowel of str) {
+      if (vowels.test(vowel)) {
+        count++;
+      }
+    }
+    return count;
+  }
+}
