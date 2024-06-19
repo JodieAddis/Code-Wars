@@ -199,3 +199,13 @@ export function basicOp(
   }
   return 0;
 }
+
+// 17. Remove all whitespaces in a string
+export function noSpace(x: string): string {
+  return x.replace(/\s/g, "");
+}
+
+// 18. You get given the time in hours and you need to return the number of litres, rounded to the smallest value.
+export function litres(time: number): number {
+  return Math.floor(time * 0.5);
+}

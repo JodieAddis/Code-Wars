@@ -18,6 +18,8 @@
 14. Replace "T" with "U" → `split()` & `join()`
 15. Calculate the total number of blank pages needed for 'n' classmates and 'm' pages per document
 16. Create a function that performs four basic mathematical operations based on three arguments → `switch()`
+17. Remove all whitespaces in a string → `replace()`
+18. Return the number of litres with given hours → `Math.floor()`
 
 ## 7 Kyu
 
@@ -30,3 +32,6 @@
 7. Return the highest and lowest number from string input → `Math.min()` & `Math.max()`
 8. Reverse DNA sequence → `switch()`, `for loop` or `match()`
 9. Counting the number of vowels → `for loop`
+10. convert the equivalent binary value to an integer → `reduce()`
+11. Convert strings to capitalized → `charAt()`, `toUpperCase()` & `slice()`
+12. Return the middle character of the word → `modulo operator`, `slice()`& `Math.floor()`

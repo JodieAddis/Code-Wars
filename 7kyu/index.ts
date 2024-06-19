@@ -162,3 +162,43 @@ export class KataVowels {
     return count;
   }
 }
+
+// 10.  convert the equivalent binary value to an integer.
+export function binaryArrayToNumber(arr: number[]): number {
+  return arr.reduce((acc, val) => {
+    return (acc << 1) | val;
+  });
+}
+
+// 11. Convert strings to capitalized
+interface String {
+  // Declaration needed, don't remove it
+  toJadenCase(): string;
+}
+
+String.prototype.toJadenCase = function () {
+  let words = this.split(" ");
+
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    // charAt(0).toUpperCase() prend la première lettre de chaque mot et la convertit en majuscule.
+    // slice(1) récupère le reste du mot après la première lettre.
+  }
+  return words.join(" ");
+};
+
+// Autre solution avec un regex :
+String.prototype.toJadenCase = function () {
+  return this.split(/\s/)
+    .map((word) => word[0].toUpperCase() + word.substring(1))
+    .join(" ");
+};
+
+// 12. Return the middle character of the word
+export function getMiddle(s: string) {
+  if (s.length % 2 === 0) {
+    return s.slice(s.length / 2 - 1, s.length / 2 + 1);
+  } else {
+    return s[Math.floor(s.length / 2)];
+  }
+}
